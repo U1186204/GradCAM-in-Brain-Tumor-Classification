@@ -3,7 +3,6 @@
 [![Open In Colab](https://img.shields.io/badge/Open%20In-Colab-F9AB00.svg?logo=googlecolab&style=for-the-badge)](https://colab.research.google.com/github/U1186204/GradCAM-in-Brain-Tumor-Classification/blob/main/main.ipynb)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black.svg?logo=github&style=for-the-badge)](https://github.com/U1186204/GradCAM-in-Brain-Tumor-Classification/tree/main)
 [![YouTube Video](https://img.shields.io/badge/YouTube-Video-FF0000.svg?logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/1YQFioh3gPY)
-[![CI Pipeline](https://github.com/U1186204/GradCAM-in-Brain-Tumor-Classification/actions/workflows/ci.yml/badge.svg)](https://github.com/U1186204/GradCAM-in-Brain-Tumor-Classification/actions)
 
 ## Abstract
 This project implements an Explainable AI (XAI) solution for classifying brain MRI scans into four tumor categories: Glioma, Meningioma, No Tumor, and Pituitary. Leveraging a pre-trained Xception model for feature extraction, the system achieves high classification accuracy while simultaneously generating GradCAM (Gradient-weighted Class Activation Mapping) heatmaps. These visualizations provide critical transparency by highlighting the specific anatomical regions the model focuses on—such as the sella turcica for pituitary tumors or tissue texture for gliomas—bridging the gap between "black box" deep learning predictions and clinical interpretability.
