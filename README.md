@@ -9,16 +9,13 @@ This project implements an Explainable AI (XAI) solution for classifying brain M
 
 
 <div align="center">
+  <h3>Video Walkthrough</h3>
+  <a href="https://youtu.be/1YQFioh3gPY" target="_blank">
+    <img src="https://img.youtube.com/vi/1YQFioh3gPY/hqdefault.jpg" alt="Watch the video" width="600" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"/>
+  </a>
+  <p><i>Click the image above to watch the demonstration on YouTube.</i></p>
+</div>
 
-<h3>Video Walkthrough</h3>
-
-<a href="https://youtu.be/1YQFioh3gPY" target="_blank">
-
-<img src="https://img.youtube.com/vi/1YQFioh3gPY/maxresdefault.jpg" alt="Watch the video" width="600" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"/>
-
-</a>
-
-<p><i>Click the image above to watch the demonstration on YouTube.</i></p></div>
 
 ## Project Tree
 ```bash
