@@ -53,3 +53,11 @@ The model demonstrates strong performance metrics across all four classes, indic
 This project demonstrates that transfer learning with Xception is highly effective for medical image classification. The addition of GradCAM proves that high accuracy models are making decisions based on medically relevant features, fostering trust in Machine Learning diagnostics. Verifying "where" the model is looking allows for rapid validation of predictions and helps identify errors in the model's reasoning process.
 
 ![Results](images/gradcam_results.png)
+
+
+## Citaions
+Kaggle Notebook: Mohamed, Y. (2023). Brain tumor MRI Accuracy 99% [Kaggle Notebook]. Retrieved from https://www.kaggle.com/code/yousefmohamed20/brain-tumor-mri-accuracy-99/notebook
+
+Viso.ai Blog Post: Boesch, G. (2024, May 16). Xception Model: Analyzing Depthwise Separable Convolutions. Viso.ai. Retrieved from https://viso.ai/deep-learning/xception-model/
+
+BMC Medical Imaging Article: Musthafa, M. M., Mahesh, T. R., Vinoth Kumar, V., & Guluwadi, S. (2024). Enhancing brain tumor detection in MRI images through explainable AI using Grad-CAM with Resnet 50. BMC Medical Imaging, 24(107). https://doi.org/10.1186/s12880-024-01292-7
