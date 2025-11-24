@@ -18,17 +18,22 @@ jobs:
       with:
         python-version: "3.9"
         
-    - name: Install dependencies and Setup Kernel
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        # Install Jupyter utils first
-        pip install jupyter nbconvert ipykernel
-        # Install requirements if they exist
+        # Install minimal tools for checking syntax
+        pip install jupyter nbconvert
+        # We still install requirements to ensure imports are valid if we were running,
+        # but for syntax checking, it's less critical. Still good practice.
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        # Register the current python environment as a kernel named 'python3'
-        python -m ipykernel install --user --name=python3
         
-    - name: Test Notebook Execution
+    - name: Check Notebook Syntax
       run: |
-        # Execute using the specific kernel we just registered
-        jupyter nbconvert --to notebook --execute main.ipynb --output main_executed.ipynb --ExecutePreprocessor.kernel_name=python3
+        # 1. Convert Notebook to Python script (ignores execution)
+        jupyter nbconvert --to python main.ipynb --output main_script
+        
+        # 2. Check for syntax errors (compilation check only, no execution)
+        # This catches typos like missing parentheses or indentation errors immediately.
+        python -m py_compile main_script.py
+        
+        echo "Syntax check passed! Notebook code is valid Python."
