@@ -21,10 +21,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        # Explicitly install execution tools first to prevent "command not found" errors
+        pip install jupyter nbconvert ipykernel
+        # Install project dependencies if the file exists
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
     - name: Test Notebook Execution
       run: |
         # Runs the notebook to ensure no code errors. 
-        # WARNING: Training models in CI can be slow.
         jupyter nbconvert --to notebook --execute main.ipynb --output main_executed.ipynb
