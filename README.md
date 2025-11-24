@@ -55,7 +55,7 @@ This project demonstrates that transfer learning with Xception is highly effecti
 ![Results](images/gradcam_results.png)
 
 
-## Citaions
+## Citations
 Kaggle Notebook: Mohamed, Y. (2023). Brain tumor MRI Accuracy 99% [Kaggle Notebook]. Retrieved from https://www.kaggle.com/code/yousefmohamed20/brain-tumor-mri-accuracy-99/notebook
 
 Viso.ai Blog Post: Boesch, G. (2024, May 16). Xception Model: Analyzing Depthwise Separable Convolutions. Viso.ai. Retrieved from https://viso.ai/deep-learning/xception-model/
