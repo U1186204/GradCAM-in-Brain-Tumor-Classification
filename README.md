@@ -9,7 +9,7 @@ This project implements an Explainable AI (XAI) solution for classifying brain M
 
 
 <div align="center">
-  <h3>Video Walkthrough</h3>
+  <h3>Video</h3>
   <a href="https://youtu.be/1YQFioh3gPY" target="_blank">
     <img src="https://img.youtube.com/vi/1YQFioh3gPY/hqdefault.jpg" alt="Watch the video" width="600" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"/>
   </a>
