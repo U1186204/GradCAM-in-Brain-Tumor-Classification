@@ -18,17 +18,17 @@ jobs:
       with:
         python-version: "3.9"
         
-    - name: Install dependencies
+    - name: Install dependencies and Setup Kernel
       run: |
         python -m pip install --upgrade pip
-        # Install notebook execution tools
+        # Install Jupyter utils first
         pip install jupyter nbconvert ipykernel
-        # Install project dependencies
+        # Install requirements if they exist
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        # Register the kernel so nbconvert can find it
+        # Register the current python environment as a kernel named 'python3'
         python -m ipykernel install --user --name=python3
         
     - name: Test Notebook Execution
       run: |
-        # Execute the notebook using the registered 'python3' kernel
+        # Execute using the specific kernel we just registered
         jupyter nbconvert --to notebook --execute main.ipynb --output main_executed.ipynb --ExecutePreprocessor.kernel_name=python3
